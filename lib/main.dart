@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         backgroundColor: AppColors.background,
         appBar: AppBar(
@@ -19,7 +20,7 @@ class MainApp extends StatelessWidget {
           title: Text("Imc Calculator"),
           foregroundColor: Colors.white,
         ),
-        body: ImcHomeScreen()
+        body: ImcHomeScreen(),
       ),
     );
   }
